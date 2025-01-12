@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      #liner::before {
+        color: #519975;
+        content: "cosmin@panescu.ro:~$";
+      }
+    </style>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" media="screen" href="style.css" />
+
+    <title>Cosmin Panescu</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="terminal">
+        <a id="before"></a>
+      </div>
+
+      <div id="command" onclick="document.getElementById('texter').focus();">
+        <textarea
+          name=""
+          id="texter"
+          type="text"
+          onkeyup="typeIt(this, event)"
+          onkeydown="typeIt(this, event);
+    moveIt(this.value.length, event)"
+          onkeypress="typeIt(this, event);"
+          autofocus=""
+        ></textarea>
+
+        <div id="liner">
+          <span id="typer"></span>
+          <b class="cursor" id="cursor"></b>
+        </div>
+      </div>
+    </div>
+
+    <script src="scripts/caret.js"></script>
+    <script src="scripts/commands.js"></script>
+    <script src="scripts/main.js" type="module"></script>
+  </body>
+</html>

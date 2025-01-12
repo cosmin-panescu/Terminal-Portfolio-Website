@@ -1,0 +1,169 @@
+body {
+  margin: 0;
+  min-height: 99%;
+  width: 100%;
+  color: #519975;
+  min-width: 550px;
+  background: #211d1b;
+  font-family: "sans-serif", monospace;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  padding: 15px 20px;
+}
+
+::selection {
+  color: #211830;
+  background-color: #519975;
+}
+
+::-moz-selection {
+  color: #211830;
+  background-color: #519975;
+}
+
+textarea {
+  left: -1000px;
+  position: absolute;
+}
+
+b {
+  font-weight: bold;
+}
+
+.cursor {
+  font-size: 12px;
+  margin-left: -7.5px;
+  color: #73abad;
+  background-color: #73abad;
+  position: relative;
+  opacity: 1;
+  height: 1.5em;
+  width: 10px;
+  max-width: 10px;
+  transform: translateY(4px);
+  overflow: hidden;
+  text-indent: -5px;
+  display: inline-block;
+  animation: blinker 1s linear infinite;
+}
+
+#command,
+#folder {
+  cursor: text;
+  height: 50px;
+  color: #73abad;
+}
+
+#liner {
+  line-height: 1.3em;
+  margin-top: -2px;
+  animation: show 0.5s ease forwards;
+  animation-delay: 1.2s;
+  opacity: 0;
+}
+
+p {
+  display: block;
+  line-height: 1.3em;
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  letter-spacing: 0.05em;
+  animation: typing 0.5s steps(30, end);
+}
+
+.no-animation {
+  animation: typing 0 steps(30, end);
+}
+
+.margin {
+  margin-left: 20px;
+}
+
+.index {
+  color: #dcdccc;
+}
+
+.color2,
+.error {
+  color: #b89076;
+}
+
+.white {
+  color: #fff;
+}
+
+.inherit,
+a {
+  color: #9c8394;
+}
+
+a {
+  text-decoration: inherit;
+}
+
+a:hover {
+  background: #73abad;
+  color: #211830;
+}
+
+a:focus {
+  outline: 0;
+}
+
+.command,
+.folder {
+  color: #73abad;
+  text-shadow: 0 0 5px #73abad;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  body {
+    padding: 20px;
+    min-width: unset;
+  }
+
+  #command,
+  #folder {
+    height: 100px;
+  }
+
+  #liner::before {
+    content: "cosmin@panescu.ro:~$";
+  }
+
+  .cursor {
+    width: 5px;
+    max-width: 5px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
