@@ -127,7 +127,13 @@ a:hover {
 }
 
 .white-glow {
+  color: var(--text-color);
   text-shadow: 0 0 5px var(--text-color);
+}
+
+.green-glow {
+  color: var(--glow-commands-color);
+  text-shadow: 0 0 5px var(--glow-commands-color);
 }
 
 a:focus {

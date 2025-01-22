@@ -5,8 +5,28 @@ var email = "mailto:1panescu.cosmin@gmail.com";
 
 var aboutme = [
   "<br>",
-  "Hello, I'm Cosmin! 👋",
-  "My dream job is to be a cybersecurity officer.",
+  "Hello, I'm <span class='white-glow'>Cosmin</span>! 👋",
+  "<br>",
+  "<span class='white-glow'>My fields of interest are:</span>",
+  "  │",
+  "  ├─ Cybersecurity",
+  "  └─ Web Development",
+  "<br>",
+  "<span class='white-glow'>About me:</span>",
+  "  │",
+  "  ├─ Hello there! I am primarily a web developer,",
+  "  ├─ but my main goal is to become a Cybersecurity Engineer.",
+  "  │",
+  "  ├─ I love learning new technologies and using,",
+  "  ├─ them to create cool projects.",
+  "  │",
+  "  ├─ You can learn about some of my projects",
+  "  ├─ using the <span class='green-glow'>'projects'</span> command.",
+  "  │",
+  "  ├─ Check out my GitHub account to see more of what I've made",
+  "  ├─ using the <span class='green-glow'>'github'</span> command.",
+  "  │",
+  "  └─ Contact me at <a href='mailto:1panescu.cosmin@gmail.com'><span class='green-glow'>'1panescu.cosmin@gmail.com'</span></a>.",
   "<br>",
 ];
 
@@ -54,7 +74,7 @@ var help = [
 ];
 
 var banner = [
-  '<h1 class="index">Cosmin Panescu</h1>',
+  `<h1 class="index">Cosmin Panescu</h1>`,
 
   '<span class="color2">Welcome to my portfolio website with an interactive terminal.</span>',
   '<span class="color2">To get a list of available commands, type</span> <span class="command">\'help\'</span><span class="color2">.</span>',
