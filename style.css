@@ -69,9 +69,19 @@ p {
   line-height: 1.3em;
   margin: 0;
   overflow: hidden;
-  white-space: nowrap;
+  white-space: normal;
   letter-spacing: 0.05em;
   animation: typing 0.5s steps(30, end);
+}
+.scroll-container {
+  overflow-x: auto; /* Permite scrolling orizontal */
+  white-space: nowrap; /* Păstrează comportamentul animației */
+}
+
+@media only screen and (max-width: 550px) {
+  .scroll-container {
+    padding: 0 10px; /* Opțional: adaugă spațiu pentru un aspect mai plăcut pe mobil */
+  }
 }
 
 .no-animation {
