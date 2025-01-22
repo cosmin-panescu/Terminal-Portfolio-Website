@@ -54,7 +54,7 @@ var help = [
 ];
 
 var banner = [
-  '<h1 class="index">Cosmin Panescu x</h1>',
+  '<h1 class="index">Cosmin Panescu</h1>',
 
   '<span class="color2">Welcome to my portfolio website with an interactive terminal.</span>',
   '<span class="color2">To get a list of available commands, type</span> <span class="command">\'help\'</span><span class="color2">.</span>',
