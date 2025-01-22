@@ -211,43 +211,6 @@ function updateLanguage() {
     before = document.getElementById("before");
     loopLines(banner, "", 80);
   } else {
-    banner = [
-      '<h1 class="index">Cosmin Panescu | All rights reserved.</h1>',
-
-      '<span class="color2">Welcome to my portfolio website with an interactive terminal.</span>',
-      '<span class="color2">To get a list of available commands, type</span> <span class="command">\'help\'</span><span class="color2">.</span>',
-      "<br>",
-    ];
-
-    help = [
-      "<br>",
-      '<span class="command">romana</span>         Translate into Romanian',
-      '<span class="command">aboutme</span>        Who am I?',
-      '<span class="command">social</span>         View my socials',
-      '<span class="command">projects</span>       View my projects',
-      '<span class="command">history</span>        View command history',
-      '<span class="command">help</span>           You should already know what this does',
-      '<span class="command">email</span>          View my email address',
-      '<span class="command">clear</span>          Clear terminal',
-      '<span class="command">banner</span>         View the "welcome" message again',
-      "<br>",
-    ];
-
-    aboutme = [
-      "<br>",
-      "Hello, I'm Cosmin! 👋",
-      "My dream job is to be a cybersecurity officer.",
-      "<br>",
-    ];
-
-    projects = [
-      "<br>",
-      "Most of the projects that I've done will be on github/cosmin-panescu and linkedin/cosminpanescu or confidential.",
-      "<br>",
-    ];
-
-    terminal.innerHTML = '<a id="before"></a>';
-    before = document.getElementById("before");
-    loopLines(banner, "", 80);
+    location.reload();
   }
 }
