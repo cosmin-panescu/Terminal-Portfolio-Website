@@ -13,10 +13,10 @@ var currentLanguage = "en";
 const commandsRo = {
   help: "ajutor",
   aboutme: "despremine",
-  social: "social",
+  contact: "contact",
   projects: "proiecte",
-  email: "email",
   banner: "banner",
+  search: "cauta",
 };
 
 let currentDirectory = "";
@@ -36,7 +36,12 @@ function enterKey(e) {
     commands.push(command.innerHTML);
     git = commands.length;
 
-    addLine("cosmin@panescu.ro:~$ " + command.innerHTML, "no-animation", 0);
+    addLine(
+      "<span style='color: var(--title-color); letter-spacing: 0px;'>cosmin@panescu.ro</span>:~$ " +
+        command.innerHTML,
+      "no-animation",
+      0
+    );
 
     commander(command.innerHTML.toLowerCase());
     command.innerHTML = "";
@@ -65,8 +70,26 @@ function enterKey(e) {
 
 function commander(cmd) {
   if (currentLanguage === "ro") {
-    // asociere comanda romana cu cea din engleza
     cmd = Object.keys(commandsRo).find((key) => commandsRo[key] === cmd) || cmd;
+  }
+
+  const searchPattern = /^search\s+(.+)/;
+  const searchMatch = cmd.match(searchPattern);
+
+  if (searchMatch) {
+    const query = searchMatch[1];
+    const googleSearchUrl = `https://www.google.com/search?q=${encodeURIComponent(
+      query
+    )}`;
+    addLine(
+      currentLanguage === "ro"
+        ? `Căutăm pe Google: <a href='${googleSearchUrl}' target='_blank'>${query}</a>`
+        : `Searching on Google: <a href='${googleSearchUrl}' target='_blank'>${query}</a>`,
+      "color2",
+      80
+    );
+    newTab(googleSearchUrl);
+    return;
   }
 
   switch (cmd.toLowerCase()) {
@@ -80,7 +103,7 @@ function commander(cmd) {
         80
       );
       break;
-    case "social":
+    case "contact":
       loopLines(social, "color2 margin", 80);
       break;
     case "projects":
@@ -93,8 +116,8 @@ function commander(cmd) {
     case "email":
       addLine(
         currentLanguage === "ro"
-          ? 'Deschidem email-ul catre: <a href="mailto:1panescu.cosmin@gmail.com">1panescu.cosmin@gmail.com</a>...'
-          : 'Opening mailto: <a href="mailto:1panescu.cosmin@gmail.com">1panescu.cosmin@gmail.com</a>...',
+          ? 'Deschidem email-ul către: <a href="mailto:1panescu.cosmin@gmail.com">1panescu.cosmin@gmail.com</a>'
+          : 'Opening mailto: <a href="mailto:1panescu.cosmin@gmail.com">1panescu.cosmin@gmail.com</a>',
         "color2",
         80
       );
@@ -105,6 +128,30 @@ function commander(cmd) {
         terminal.innerHTML = '<a id="before"></a>';
         before = document.getElementById("before");
       }, 1);
+      break;
+    case "github":
+      addLine(
+        currentLanguage === "ro" ? "Către GitHub..." : "Opening github...",
+        "color2",
+        80
+      );
+      newTab(github);
+      break;
+    case "youtube":
+      addLine(
+        currentLanguage === "ro" ? "Către YouTube..." : "Opening YouTube...",
+        "color2",
+        80
+      );
+      newTab(youtube);
+      break;
+    case "linkedin":
+      addLine(
+        currentLanguage === "ro" ? "Către LinkedIn..." : "Opening LinkedIn...",
+        "color2",
+        80
+      );
+      newTab(youtube);
       break;
     case "banner":
       loopLines(currentLanguage === "ro" ? bannerRo : banner, "", 80);

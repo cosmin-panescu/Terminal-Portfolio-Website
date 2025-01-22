@@ -1,10 +1,25 @@
+/* :root {
+  --title-color: #519975;
+  --dark-color: #211830;
+  --glow-commands-color: #73abad;
+  --background-color: #211d1b;
+  --text-color: #b89076;
+} */
+
+:root {
+  --title-color: #ff9413;
+  --dark-color: #211830;
+  --glow-commands-color: #05ce91;
+  --background-color: #181926;
+  --text-color: #dae3ec;
+}
+
 body {
   margin: 0;
   min-height: 99%;
   width: 100%;
-  color: #519975;
   min-width: 550px;
-  background: #211d1b;
+  background: var(--background-color);
   font-family: "sans-serif", monospace;
   overflow-x: hidden;
 }
@@ -14,13 +29,12 @@ body {
 }
 
 ::selection {
-  color: #211830;
-  background-color: #519975;
+  color: var(--dark-color);
+  background-color: var(--title-color);
 }
 
 ::-moz-selection {
-  color: #211830;
-  background-color: #519975;
+  background-color: var(--title-color);
 }
 
 textarea {
@@ -35,12 +49,12 @@ b {
 .cursor {
   font-size: 12px;
   margin-left: -7.5px;
-  color: #73abad;
-  background-color: #73abad;
+  color: var(--text-color);
+  background-color: var(--text-color);
   position: relative;
   opacity: 1;
   height: 1.5em;
-  width: 10px;
+  width: 5px;
   max-width: 10px;
   transform: translateY(4px);
   overflow: hidden;
@@ -53,7 +67,7 @@ b {
 #folder {
   cursor: text;
   height: 50px;
-  color: #73abad;
+  color: var(--glow-commands-color);
 }
 
 #liner {
@@ -62,6 +76,12 @@ b {
   animation: show 0.5s ease forwards;
   animation-delay: 1.2s;
   opacity: 0;
+  color: var(--text-color);
+}
+
+#liner::before {
+  color: var(--title-color);
+  content: "cosmin@panescu.ro:~$";
 }
 
 p {
@@ -76,6 +96,7 @@ p {
 
 .no-animation {
   animation: typing 0 steps(30, end);
+  color: var(--text-color);
 }
 
 .margin {
@@ -88,25 +109,25 @@ p {
 
 .color2,
 .error {
-  color: #b89076;
+  color: var(--text-color);
 }
 
 .white {
   color: #fff;
 }
 
-.inherit,
 a {
-  color: #9c8394;
-}
-
-a {
-  text-decoration: inherit;
+  text-decoration: none;
+  color: var(--glow-commands-color);
+  transition: all 0.15s ease-in-out;
 }
 
 a:hover {
-  background: #73abad;
-  color: #211830;
+  text-shadow: 0 0 5px var(--glow-commands-color);
+}
+
+.white-glow {
+  text-shadow: 0 0 5px var(--text-color);
 }
 
 a:focus {
@@ -115,8 +136,21 @@ a:focus {
 
 .command,
 .folder {
-  color: #73abad;
-  text-shadow: 0 0 5px #73abad;
+  color: var(--glow-commands-color);
+  text-shadow: 0 0 5px var(--glow-commands-color);
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--text-color);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
 }
 
 @keyframes typing {

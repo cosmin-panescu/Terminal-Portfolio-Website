@@ -12,17 +12,23 @@ var aboutme = [
 
 var social = [
   "<br>",
-  'youtube            <a href="' +
+  "Write me:",
+  "  │",
+  '  ├─ <span class="white-glow">email</span>           <a href="' +
+    email +
+    '" target="_blank">1panescu.cosmin@gmail.com' +
+    "</a>",
+  '  ├─ <span class="white-glow">linkedin</span>        <a href="' +
+    linkedin +
+    '" target="_blank">linkedin/in/cosmin-panescu' +
+    "</a>",
+  '  ├─ <span class="white-glow">github</span>          <a href="' +
+    github +
+    '" target="_blank">github/cosmin-panescu' +
+    "</a>",
+  '  └─ <span class="white-glow">youtube</span>         <a href="' +
     youtube +
     '" target="_blank">youtube/@PierdutInNatura' +
-    "</a>",
-  'linkedin           <a href="' +
-    linkedin +
-    '" target="_blank">linkedin/@CosminPanescu' +
-    "</a>",
-  'github             <a href="' +
-    github +
-    '" target="_blank">github/@CosminPanescu' +
     "</a>",
   "<br>",
 ];
@@ -35,14 +41,15 @@ var projects = [
 
 var help = [
   "<br>",
-  '<span class="command">aboutme</span>        Who am I?',
-  '<span class="command">social</span>         View my socials',
-  '<span class="command">projects</span>       View my projects',
-  '<span class="command">help</span>           You should already know what this does',
-  '<span class="command">error</span>          DO NOT USE THIS COMMAND!!!',
-  '<span class="command">email</span>          View my email address',
-  '<span class="command">clear</span>          Clear terminal',
-  '<span class="command">romana</span>         Translate into Romanian',
+  '<span class="command">aboutme</span>          Who am I?',
+  '<span class="command">contact</span>          View my socials',
+  '<span class="command">projects</span>         View my projects',
+  '<span class="command">help</span>             You should already know what this does',
+  '<span class="command">error</span>            DO NOT USE THIS COMMAND!!!',
+  '<span class="command">email</span>            View my email address',
+  '<span class="command">clear</span>            Clear terminal',
+  '<span class="command">romana</span>           Translate into Romanian',
+  '<span class="command">search [query]</span>   Google it',
   "<br>",
 ];
 
@@ -71,14 +78,15 @@ var bannerRo = [
 
 var helpRo = [
   "<br>",
-  '<span class="command">despremine</span>     Cine sunt eu?',
-  '<span class="command">social</span>         Vezi rețelele mele sociale',
-  '<span class="command">proiecte</span>       Vezi proiectele mele',
-  '<span class="command">ajutor</span>         Ar trebui sa stii deja ce face',
-  '<span class="command">error</span>          NU FOLOSI ACEASTA COMANDA!!!',
-  '<span class="command">email</span>          Vezi adresa mea de email',
-  '<span class="command">clear</span>          Curăță terminalul',
-  '<span class="command">english</span>        Website in English',
+  '<span class="command">despremine</span>       Cine sunt eu?',
+  '<span class="command">contact</span>          Vezi rețelele mele sociale',
+  '<span class="command">proiecte</span>         Vezi proiectele mele',
+  '<span class="command">ajutor</span>           Ar trebui sa stii deja ce face',
+  '<span class="command">error</span>            NU FOLOSI ACEASTA COMANDA!!!',
+  '<span class="command">email</span>            Vezi adresa mea de email',
+  '<span class="command">clear</span>            Curăță terminalul',
+  '<span class="command">english</span>          Website in English',
+  '<span class="command">search [query]</span>   Caută pe Google',
   "<br>",
 ];
 
