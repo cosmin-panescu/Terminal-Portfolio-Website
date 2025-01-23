@@ -35,7 +35,7 @@ var experience = [
   "I've worked on some of the following at these places 👨‍💻",
   "<br>",
   "<span class='white-glow'>Junior Web Developer</span>",
-  "  ├─ <i>360Advertising (may 2024 - december 2024)</i>",
+  "  ├─ <i>360Advertising (May 2024 - December 2024)</i>",
   "  ├─ Developed 6 websites and optimized 15+ websites, implementing APIs while ensuring",
   "  │  high performance and an excellent user experience; specialized in development and",
   "  │  maintenance, including WooCommerce integration, server administration, security",
@@ -49,6 +49,23 @@ var experience = [
   "  │  additionally, managed and maintained customer databases, resolving tickets and",
   "  │  updating information using Microsoft SQL Server, SysAdmin, Excel, CRM, and CMS.",
   "  └─ <i> SQL, Azure OpenAI, SysAdmin, CRM, ERP, CMS, git, Excel.</i>",
+  "<br>",
+];
+var education = [
+  "<br>",
+  "My educational journey 🎓",
+  "<br>",
+  "<span class='white-glow'>University of Bucharest</span>",
+  "  ├─ Bachelor's program: Cybernetics, statistics and economic informatics. (2022-2025)",
+  "  └─ Relevant classes: Computer Programming, Databases, Algorithms and programming techniques",
+  "                       Information Technology, Web Technologies, Software Packages, Data Analysis.",
+  "<br>",
+  "<span class='white-glow'>Google Cybersecurity</span>",
+  "  └─ Relevant skills: SIEM tools, linux commands, computer networking & security, cryptography,",
+  "                      TCP/IP, security controls, network security, cyber attacks, threat modeling.",
+  "<br>",
+  "<span class='white-glow'>Frontend Masters</span>",
+  "  └─ Relevant classes: Practical Guide to Algorithms, Modern SEO, Web Performance, JavaScript, Python.",
   "<br>",
 ];
 
@@ -84,14 +101,12 @@ var projects = [
 var help = [
   "<br>",
   '<span class="command">aboutme</span>          Who am I?',
-  '<span class="command">contact</span>          View my socials',
+  '<span class="command">experience</span>       View my relevant work experience',
+  '<span class="command">education</span>        See where and what I study',
   '<span class="command">projects</span>         View my projects',
-  '<span class="command">help</span>             You should already know what this does',
-  '<span class="command">error</span>            DO NOT USE THIS COMMAND!!!',
-  '<span class="command">email</span>            View my email address',
-  '<span class="command">clear</span>            Clear terminal',
+  '<span class="command">contact</span>          View my socials',
   '<span class="command">romana</span>           Translate into Romanian',
-  '<span class="command">search [query]</span>   Google it',
+  '<span class="command">clear</span>            Clear terminal',
   "<br>",
 ];
 
@@ -124,11 +139,8 @@ var helpRo = [
   '<span class="command">contact</span>          Vezi rețelele mele sociale',
   '<span class="command">proiecte</span>         Vezi proiectele mele',
   '<span class="command">ajutor</span>           Ar trebui sa stii deja ce face',
-  '<span class="command">error</span>            NU FOLOSI ACEASTA COMANDA!!!',
-  '<span class="command">email</span>            Vezi adresa mea de email',
   '<span class="command">clear</span>            Curăță terminalul',
   '<span class="command">english</span>          Website in English',
-  '<span class="command">search [query]</span>   Caută pe Google',
   "<br>",
 ];
 

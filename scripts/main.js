@@ -1,5 +1,3 @@
-import { activateHackerEffect } from "./hackerEffect.js";
-
 var before = document.getElementById("before");
 var liner = document.getElementById("liner");
 var command = document.getElementById("typer");
@@ -13,10 +11,11 @@ var currentLanguage = "en";
 const commandsRo = {
   help: "ajutor",
   aboutme: "despremine",
-  contact: "contact",
+  experience: "experienta",
+  education: "educatie",
   projects: "proiecte",
   banner: "banner",
-  search: "cauta",
+  contact: "contact",
 };
 
 let currentDirectory = "";
@@ -73,25 +72,6 @@ function commander(cmd) {
     cmd = Object.keys(commandsRo).find((key) => commandsRo[key] === cmd) || cmd;
   }
 
-  const searchPattern = /^search\s+(.+)/;
-  const searchMatch = cmd.match(searchPattern);
-
-  if (searchMatch) {
-    const query = searchMatch[1];
-    const googleSearchUrl = `https://www.google.com/search?q=${encodeURIComponent(
-      query
-    )}`;
-    addLine(
-      currentLanguage === "ro"
-        ? `Căutăm pe Google: <a href='${googleSearchUrl}' target='_blank'>${query}</a>`
-        : `Searching on Google: <a href='${googleSearchUrl}' target='_blank'>${query}</a>`,
-      "color2",
-      80
-    );
-    newTab(googleSearchUrl);
-    return;
-  }
-
   switch (cmd.toLowerCase()) {
     case "help":
       loopLines(currentLanguage === "ro" ? helpRo : help, "color2 margin", 80);
@@ -120,6 +100,13 @@ function commander(cmd) {
         80
       );
       break;
+    case "education":
+      loopLines(
+        currentLanguage === "ro" ? educationRo : education,
+        "color2 margin",
+        80
+      );
+      break;
     case "email":
       addLine(
         currentLanguage === "ro"
@@ -144,14 +131,6 @@ function commander(cmd) {
       );
       newTab(github);
       break;
-    case "youtube":
-      addLine(
-        currentLanguage === "ro" ? "Către YouTube..." : "Opening YouTube...",
-        "color2",
-        80
-      );
-      newTab(youtube);
-      break;
     case "linkedin":
       addLine(
         currentLanguage === "ro" ? "Către LinkedIn..." : "Opening LinkedIn...",
@@ -170,9 +149,6 @@ function commander(cmd) {
     case "english":
       currentLanguage = "en";
       updateLanguage();
-      break;
-    case "error":
-      activateHackerEffect();
       break;
 
     default:
