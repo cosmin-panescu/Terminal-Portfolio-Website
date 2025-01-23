@@ -30,6 +30,28 @@ var aboutme = [
   "<br>",
 ];
 
+var experience = [
+  "<br>",
+  "I've worked on some of the following at these places 👨‍💻",
+  "<br>",
+  "<span class='white-glow'>Junior Web Developer</span>",
+  "  ├─ <i>360Advertising (may 2024 - december 2024)</i>",
+  "  ├─ Developed 6 websites and optimized 15+ websites, implementing APIs while ensuring",
+  "  │  high performance and an excellent user experience; specialized in development and",
+  "  │  maintenance, including WooCommerce integration, server administration, security",
+  "  │  practices, and ongoing support for website stability and functionality.",
+  "  └─ <i> HTML, CSS, JavaScript, PHP, MySQL, WordPress, WooCommerce, git, GitHub, API, SEO.</i>",
+  "<br>",
+  "<span class='white-glow'>Database Services Analyst</span>",
+  "  ├─ <i>Regina Maria (June 2023 - February 2024)</i>",
+  "  ├─ Developed and deployed an AI assistant using Azure OpenAI Playground",
+  "  │  in collaboration with Microsoft, enhancing employee efficiency and work speed;",
+  "  │  additionally, managed and maintained customer databases, resolving tickets and",
+  "  │  updating information using Microsoft SQL Server, SysAdmin, Excel, CRM, and CMS.",
+  "  └─ <i> SQL, Azure OpenAI, SysAdmin, CRM, ERP, CMS, git, Excel.</i>",
+  "<br>",
+];
+
 var social = [
   "<br>",
   "Write me:",

@@ -113,6 +113,13 @@ function commander(cmd) {
         80
       );
       break;
+    case "experience":
+      loopLines(
+        currentLanguage === "ro" ? experienceRo : experience,
+        "color2 margin",
+        80
+      );
+      break;
     case "email":
       addLine(
         currentLanguage === "ro"
