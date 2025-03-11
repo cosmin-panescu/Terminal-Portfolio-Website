@@ -18,8 +18,6 @@ const commandsRo = {
   contact: "contact",
 };
 
-let currentDirectory = "";
-
 setTimeout(() => {
   loopLines(banner, "", 80);
   textarea.focus();

@@ -1,3 +1,4 @@
+/* secondary style */
 /* :root {
   --title-color: #519975;
   --dark-color: #211830;
@@ -6,6 +7,7 @@
   --text-color: #b89076;
 } */
 
+/* primary style */
 :root {
   --title-color: #ff9413;
   --dark-color: #211830;
@@ -126,6 +128,10 @@ a:hover {
   text-shadow: 0 0 5px var(--glow-commands-color);
 }
 
+a:focus {
+  outline: 0;
+}
+
 .white-glow {
   color: var(--text-color);
   text-shadow: 0 0 5px var(--text-color);
@@ -134,10 +140,6 @@ a:hover {
 .green-glow {
   color: var(--glow-commands-color);
   text-shadow: 0 0 5px var(--glow-commands-color);
-}
-
-a:focus {
-  outline: 0;
 }
 
 .command,
