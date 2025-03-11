@@ -3,6 +3,18 @@ var github = "https://github.com/cosmin-panescu";
 var linkedin = "https://www.linkedin.com/in/cosmin-panescu/";
 var email = "mailto:1panescu.cosmin@gmail.com";
 
+var help = [
+  "<br>",
+  '<span class="command">aboutme</span>          Who am I?',
+  '<span class="command">experience</span>       View my relevant work experience',
+  '<span class="command">education</span>        See where and what I study',
+  '<span class="command">projects</span>         View my projects',
+  '<span class="command">contact</span>          View my socials',
+  '<span class="command">romana</span>           Translate into Romanian',
+  '<span class="command">clear</span>            Clear terminal',
+  "<br>",
+];
+
 var aboutme = [
   "<br>",
   "Hello, I'm <span class='white-glow'>Cosmin</span>! 👋",
@@ -51,6 +63,7 @@ var experience = [
   "  └─ <i> SQL, Azure OpenAI, SysAdmin, CRM, ERP, CMS, git, Excel.</i>",
   "<br>",
 ];
+
 var education = [
   "<br>",
   "My educational journey 🎓",
@@ -98,18 +111,6 @@ var projects = [
   "<br>",
 ];
 
-var help = [
-  "<br>",
-  '<span class="command">aboutme</span>          Who am I?',
-  '<span class="command">experience</span>       View my relevant work experience',
-  '<span class="command">education</span>        See where and what I study',
-  '<span class="command">projects</span>         View my projects',
-  '<span class="command">contact</span>          View my socials',
-  '<span class="command">romana</span>           Translate into Romanian',
-  '<span class="command">clear</span>            Clear terminal',
-  "<br>",
-];
-
 var banner = [
   `<h1 class="index">Cosmin Panescu</h1>`,
 
@@ -119,6 +120,61 @@ var banner = [
 ];
 
 // ROMANA
+var helpRo = [
+  "<br>",
+  '<span class="command">despremine</span>       Cine sunt eu?',
+  '<span class="command">experienta</span>       Experiența mea de muncă relevantă',
+  '<span class="command">educatie</span>         Unde și ce studiez',
+  '<span class="command">proiecte</span>         Vezi proiectele mele',
+  '<span class="command">contact</span>          Vezi rețelele mele sociale',
+  '<span class="command">english</span>          Website in English',
+  '<span class="command">clear</span>            Curăță terminalul',
+  "<br>",
+];
+
+var educationRo = [
+  "<br>",
+  "Parcursul meu educațional 🎓",
+  "<br>",
+  "<span class='white-glow'>Universitatea din București</span>",
+  "  ├─ Program de licență: Cibernetică, statistică și informatică economică. (2022-2025)",
+  "  └─ Cursuri relevante: Programare pe calculator, Baze de date, Algoritmi și tehnici de programare,",
+  "                        Tehnologia informației, Tehnologii web, Pachete software, Analiza datelor.",
+  "<br>",
+  "<span class='white-glow'>Google Cybersecurity</span>",
+  "  └─ Competențe relevante: Instrumente SIEM, comenzi Linux, rețelistică și securitate informatică,",
+  "                           criptografie, TCP/IP, controale de securitate, securitate rețele,",
+  "                           atacuri cibernetice, modelarea amenințărilor.",
+  "<br>",
+  "<span class='white-glow'>Frontend Masters</span>",
+  "  └─ Cursuri relevante: Ghid pentru algoritmi, SEO modern, Performanță web, JavaScript, Python.",
+  "<br>",
+];
+
+var experienceRo = [
+  "<br>",
+  "Am lucrat la următoarele proiecte în aceste locuri 👨‍💻",
+  "<br>",
+  "<span class='white-glow'>Junior Web Developer</span>",
+  "  ├─ <i>360Advertising (Mai 2024 - Decembrie 2024)</i>",
+  "  ├─ Am dezvoltat 6 site-uri web și am optimizat peste 15 site-uri, implementând API-uri",
+  "  │  și asigurând performanță ridicată și o experiență excelentă pentru utilizatori;",
+  "  │  specializat în dezvoltare și mentenanță, inclusiv integrarea WooCommerce,",
+  "  │  administrarea serverelor, practici de securitate și suport continuu pentru",
+  "  │  stabilitatea și funcționalitatea site-urilor.",
+  "  └─ <i> HTML, CSS, JavaScript, PHP, MySQL, WordPress, WooCommerce, git, GitHub, API, SEO.</i>",
+  "<br>",
+  "<span class='white-glow'>Database Services Analyst</span>",
+  "  ├─ <i>Regina Maria (Iunie 2023 - Februarie 2024)</i>",
+  "  ├─ Am dezvoltat și implementat un asistent AI folosind Azure OpenAI Playground",
+  "  │  în colaborare cu Microsoft, îmbunătățind eficiența angajaților și viteza de lucru;",
+  "  │  de asemenea, am gestionat și întreținut baze de date ale clienților,",
+  "  │  rezolvând tichete și actualizând informații folosind Microsoft SQL Server,",
+  "  │  SysAdmin, Excel, CRM și CMS.",
+  "  └─ <i> SQL, Azure OpenAI, SysAdmin, CRM, ERP, CMS, git, Excel.</i>",
+  "<br>",
+];
+
 var projectsRo = [
   "<br>",
   "Majoritatea proiectelor sunt pe github sau blablabla...",
@@ -133,20 +189,29 @@ var bannerRo = [
   "<br>",
 ];
 
-var helpRo = [
-  "<br>",
-  '<span class="command">despremine</span>       Cine sunt eu?',
-  '<span class="command">contact</span>          Vezi rețelele mele sociale',
-  '<span class="command">proiecte</span>         Vezi proiectele mele',
-  '<span class="command">ajutor</span>           Ar trebui sa stii deja ce face',
-  '<span class="command">clear</span>            Curăță terminalul',
-  '<span class="command">english</span>          Website in English',
-  "<br>",
-];
-
 var aboutmeRo = [
   "<br>",
-  "Salut, sunt Cosmin! 👋",
-  "Visez să devin ofițer în domeniul securității cibernetice.",
+  "Salut, eu sunt <span class='white-glow'>Cosmin</span>! 👋",
+  "<br>",
+  "<span class='white-glow'>Domeniile mele de interes sunt:</span>",
+  "  │",
+  "  ├─ Securitate cibernetică",
+  "  └─ Dezvoltare web",
+  "<br>",
+  "<span class='white-glow'>Despre mine:</span>",
+  "  │",
+  "  ├─ Salut! Sunt în principal un dezvoltator web,",
+  "  ├─ dar obiectivul meu principal este să devin Inginer în Securitate Cibernetică.",
+  "  │",
+  "  ├─ Îmi place să învăț tehnologii noi și să le folosesc",
+  "  ├─ pentru a crea proiecte interesante.",
+  "  │",
+  "  ├─ Poți afla mai multe despre proiectele mele",
+  "  ├─ folosind comanda <span class='green-glow'>'projects'</span>.",
+  "  │",
+  "  ├─ Vezi contul meu de GitHub pentru a descoperi mai multe din ceea ce am realizat,",
+  "  ├─ folosind comanda <span class='green-glow'>'github'</span>.",
+  "  │",
+  "  └─ Contactează-mă la <a href='mailto:1panescu.cosmin@gmail.com'><span class='green-glow'>'1panescu.cosmin@gmail.com'</span></a>.",
   "<br>",
 ];
