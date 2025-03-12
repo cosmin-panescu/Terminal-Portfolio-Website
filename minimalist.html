@@ -1,11 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css_styles/minimalist.css" />
+    <link rel="stylesheet" href="style/notification.css" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <!-- Notification -->
+    <button id="btn-message" class="button-message">
+      <div class="content-avatar">
+        <div class="status-user"></div>
+        <div class="avatar">
+          <img
+            src="/assets/regina_maria.png"
+            alt="User Avatar"
+            class="user-img"
+          />
+        </div>
+      </div>
+      <div class="notice-content">
+        <div class="lable-message">
+          New message<span class="number-message">1</span>
+        </div>
+        <div class="user-id">
+          I'm waiting for <br />
+          your message 😁
+        </div>
+      </div>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="logo">C</div>
+
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="right-section"></div>
+
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Hero section -->
+      <section id="hero">
+        <h1>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ad sequi
+          rem exercitationem quibusdam voluptatum.
+        </h1>
+      </section>
+
+      <!-- Work section -->
+      <section class="section work" id="work">
+        <div class="title-container">
+          <h2>work.</h2>
+        </div>
+        <div class="container">
+          <div class="cell cell-1-1"></div>
+          <div class="cell cell-2-1">
+            <div class="company-logo">
+              <img src="assets/360advertising.webp" alt="360advertising" />
+            </div>
+            <div class="company-description">
+              <span class="name">360ADVERTISING</span>
+              <span class="position">Web Developer</span>
+              <span class="date"
+                >May - December 2024 &nbsp;|&nbsp; Bucharest</span
+              >
+              <p class="description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+                ut sapiente blanditiis aliquid praesentium repudiandae vel
+                numquam molestias accusamus consequuntur, atque, totam quod
+                reiciendis dolores ad perferendis, facere corporis ipsum.
+              </p>
+            </div>
+          </div>
+          <div class="cell cell-1-2"></div>
+          <div class="cell cell-2-2">
+            <div class="company-logo" style="width: 100px">
+              <img src="assets/regina_maria.png" alt="" />
+            </div>
+            <div class="company-description">
+              <span class="name">REGINA MARIA</span>
+              <span class="position">Database Service Analyst</span>
+              <span class="date"
+                >June 2023 - February 2024 &nbsp;|&nbsp; Bucharest</span
+              >
+              <p class="description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+                ut sapiente blanditiis aliquid praesentium repudiandae vel
+                numquam molestias accusamus consequuntur, atque, totam quod
+                reiciendis dolores ad perferendis, facere corporis ipsum.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects section -->
+      <section class="section projects" id="projects">
+        <div class="title-container">
+          <h2>projects.</h2>
+        </div>
+        <div class="container">
+          <div class="cell cell-1-1"></div>
+          <div class="cell cell-2-1">
+            <div class="project-box">
+              <h3>Project 1</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+                tenetur libero ipsa, quisquam ratione voluptas.
+              </p>
+              <ul>
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>OpenAI API</li>
+                <li>React</li>
+              </ul>
+            </div>
+          </div>
+          <div class="cell cell-1-2"></div>
+          <div class="cell cell-2-2">
+            <div class="project-box">
+              <h3>Project 2</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+                tenetur libero ipsa, quisquam ratione voluptas.
+              </p>
+              <ul>
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>OpenAI API</li>
+                <li>React</li>
+              </ul>
+            </div>
+          </div>
+          <div class="cell cell-1-3"></div>
+          <div class="cell cell-2-3">
+            <div class="project-box">
+              <h3>Project 3</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+                tenetur libero ipsa, quisquam ratione voluptas.
+              </p>
+              <ul>
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>OpenAI API</li>
+                <li>React</li>
+              </ul>
+            </div>
+          </div>
+          <div class="cell cell-1-4"></div>
+          <div class="cell cell-2-4">
+            <div class="project-box">
+              <h3>Project 4</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+                tenetur libero ipsa, quisquam ratione voluptas.
+              </p>
+              <ul>
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>OpenAI API</li>
+                <li>React</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About section -->
+      <section class="section about" id="about">
+        <div class="title-container">
+          <h2>about.</h2>
+        </div>
+        <div class="container">
+          <div class="cell cell-1-1"></div>
+          <div class="cell cell-2-1">
+            I'm a software developer based in India with over 3 years of
+            experience across brand and product, at companies large and small. I
+            take pride in my craft, and love mentoring earlier career
+            developers. I develop cross functional partnerships, and thrive in
+            complex, ambiguous environments.
+          </div>
+          <div class="cell cell-3-1"></div>
+          <div class="cell cell-1-2"></div>
+          <div class="cell cell-2-2"></div>
+          <div class="cell cell-3-2">
+            My approach combines technical expertise with creative
+            problem-solving, always striving to build solutions that are both
+            elegant and practical. Zooming out on company strategy, zooming in
+            on details.
+          </div>
+          <div class="cell cell-1-3"></div>
+          <div class="cell cell-2-3"></div>
+          <div class="cell cell-3-3">
+            In my free time I try to challenge myself with new projects, learn
+            new things, compose music, and solve some leetcode problems to keep
+            my skills sharp and brain active.
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact section -->
+      <section class="section contact" id="contact">
+        <div class="title-container">
+          <h2>contact.</h2>
+        </div>
+        <div class="container">
+          <div class="cell cell-1-1"></div>
+          <div class="cell cell-2-1">
+            <a href="mailto:1panescu.cosmin@gmail.com"
+              >1panescu.cosmin@gmail.com</a
+            >
+            <div class="pulse">
+              <div class="loader"></div>
+              <span>Looking for new opportunities</span>
+            </div>
+            <ul>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/cosmin-panescu/"
+                  target="_blank"
+                  >LinkedIn</a
+                >
+              </li>
+              <li>
+                <a href="https://github.com/cosmin-panescu" target="_blank"
+                  >GitHub</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="/scripts/minimalist.js"></script>
+  </body>
 </html>
