@@ -116,12 +116,14 @@ var banner = [
 
   '<span class="color2">Welcome to my portfolio website with an interactive terminal.</span>',
   '<span class="color2">To get a list of available commands, type</span> <span class="command">\'help\'</span><span class="color2">.</span>',
+  '<span class="color2">To visit the \'normal\' version of this website, type</span> <span class="command">\'normal\'</span><span class="color2">.</span>',
   "<br>",
 ];
 
 // ROMANA
 var helpRo = [
   "<br>",
+  '<span class="command">normal</span>           Versiunea "normală" a site-ului',
   '<span class="command">despremine</span>       Cine sunt eu?',
   '<span class="command">experienta</span>       Experiența mea de muncă relevantă',
   '<span class="command">educatie</span>         Unde și ce studiez',
@@ -186,6 +188,7 @@ var bannerRo = [
 
   '<span class="color2">Bine ai venit pe site-ul meu cu un terminal interactiv.</span>',
   '<span class="color2">Pentru a vedea lista de comenzi, tastează</span> <span class="command">\'ajutor\'</span><span class="color2">.</span>',
+  '<span class="color2">Vizitează versiunea \'normală\' a site-ului, type</span> <span class="command">\'normal\'</span><span class="color2">.</span>',
   "<br>",
 ];
 

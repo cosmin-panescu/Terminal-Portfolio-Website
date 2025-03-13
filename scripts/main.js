@@ -74,6 +74,14 @@ function commander(cmd) {
     case "help":
       loopLines(currentLanguage === "ro" ? helpRo : help, "color2 margin", 80);
       break;
+    case "normal":
+      addLine(
+        currentLanguage === "ro" ? "Către website..." : "Opening website...",
+        "color2",
+        80
+      );
+      newTab("minimalist.html");
+      break;
     case "aboutme":
       loopLines(
         currentLanguage === "ro" ? aboutmeRo : aboutme,
