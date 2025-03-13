@@ -7,6 +7,10 @@
   font-weight: 400;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #000000;
   color: rgba(254, 254, 255, 0.928);
@@ -131,7 +135,6 @@ main {
   flex-direction: column;
   gap: 25px;
 }
-.work .container .cell .company-description .name,
 .work .container .cell .company-description .description {
   font-size: 14px;
   color: rgb(150, 150, 150);
@@ -144,10 +147,17 @@ main {
   font-weight: 500;
 }
 .work .container .cell .company-logo {
-  width: 250px;
+  display: flex;
+  align-items: center;
+  gap: 7.5px;
+}
+.work .container .cell .company-logo .name {
+  width: 500px;
+  font-size: 14px;
+  color: rgb(150, 150, 150);
 }
 .work .container .cell .company-logo img {
-  width: 100%;
+  width: 40px;
 }
 
 .projects {
@@ -233,6 +243,70 @@ main {
   100% {
     box-shadow: 0 0 0 14px rgba(105, 255, 168, 0);
   }
+}
+
+.notification {
+  width: 100%;
+  z-index: 999;
+}
+.notification .notification-container {
+  position: fixed;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 375px;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 10px 13px;
+  font-size: 15px;
+  color: #000;
+  transition: top 0.5s ease-in-out;
+  box-shadow: 0px 10px 30px rgb(0, 0, 0);
+}
+.notification .notification-container .notification-container::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: calc(100% + 60px);
+  height: calc(100% + 60px);
+  background: rgb(0, 0, 0);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: -1;
+}
+.notification .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 7px;
+}
+.notification .top .top-left {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.notification .top .top-left img {
+  width: 25px;
+  height: 25px;
+}
+.notification .top .top-left span {
+  font-size: 14px;
+  color: rgb(79, 79, 79);
+}
+.notification .bottom {
+  display: flex;
+  flex-direction: column;
+}
+.notification .bottom .name {
+  font-weight: 600;
+}
+
+.notification-container.show {
+  top: 15px;
 }
 
 /* Mobile view */

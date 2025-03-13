@@ -4,43 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css_styles/minimalist.css" />
-    <link rel="stylesheet" href="style/notification.css" />
     <title>Document</title>
   </head>
   <body>
     <!-- Notification -->
-    <button id="btn-message" class="button-message">
-      <div class="content-avatar">
-        <div class="status-user"></div>
-        <div class="avatar">
-          <img
-            src="/assets/regina_maria.png"
-            alt="User Avatar"
-            class="user-img"
-          />
+    <div class="notification">
+      <div class="notification-container">
+        <div class="top">
+          <div class="top-left">
+            <img src="assets/message-icon.webp" alt="" />
+            <span>MESSAGE</span>
+          </div>
+          <span class="time">now</span>
+        </div>
+
+        <div class="bottom">
+          <span class="name">Cosmin Panescu</span>
+          <span class="message">I am waiting for your message. 👨🏻‍💻</span>
         </div>
       </div>
-      <div class="notice-content">
-        <div class="lable-message">
-          New message<span class="number-message">1</span>
-        </div>
-        <div class="user-id">
-          I'm waiting for <br />
-          your message 😁
-        </div>
-      </div>
-    </button>
+    </div>
 
     <!-- Navigation -->
     <nav class="navbar">
       <div class="logo">C</div>
 
       <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#work">experience.</a></li>
+        <li><a href="#projects">projects.</a></li>
+        <li><a href="#about">about.</a></li>
+        <li><a href="#contact">contact.</a></li>
       </ul>
 
       <div class="right-section"></div>
@@ -70,10 +63,10 @@
           <div class="cell cell-1-1"></div>
           <div class="cell cell-2-1">
             <div class="company-logo">
-              <img src="assets/360advertising.webp" alt="360advertising" />
+              <img src="assets/360adv.png" alt="360advertising" />
+              <span class="name">360ADVERTISING</span>
             </div>
             <div class="company-description">
-              <span class="name">360ADVERTISING</span>
               <span class="position">Web Developer</span>
               <span class="date"
                 >May - December 2024 &nbsp;|&nbsp; Bucharest</span
@@ -88,22 +81,21 @@
           </div>
           <div class="cell cell-1-2"></div>
           <div class="cell cell-2-2">
-            <div class="company-logo" style="width: 100px">
-              <img src="assets/regina_maria.png" alt="" />
-            </div>
-            <div class="company-description">
-              <span class="name">REGINA MARIA</span>
-              <span class="position">Database Service Analyst</span>
-              <span class="date"
-                >June 2023 - February 2024 &nbsp;|&nbsp; Bucharest</span
-              >
-              <p class="description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-                ut sapiente blanditiis aliquid praesentium repudiandae vel
-                numquam molestias accusamus consequuntur, atque, totam quod
-                reiciendis dolores ad perferendis, facere corporis ipsum.
-              </p>
-            </div>
+            <div class="company-logo"">
+            <img src="assets/regina_maria.png" alt="" />
+            <span class="name">REGINA MARIA</span>
+          </div>
+          <div class="company-description">
+            <span class="position">Database Service Analyst</span>
+            <span class="date"
+              >June 2023 - February 2024 &nbsp;|&nbsp; Bucharest</span
+            >
+            <p class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+              ut sapiente blanditiis aliquid praesentium repudiandae vel numquam
+              molestias accusamus consequuntur, atque, totam quod reiciendis
+              dolores ad perferendis, facere corporis ipsum.
+            </p>
           </div>
         </div>
       </section>
@@ -248,6 +240,6 @@
       </section>
     </main>
 
-    <script src="/scripts/minimalist.js"></script>
+    <script src="scripts/minimalist.js"></script>
   </body>
 </html>

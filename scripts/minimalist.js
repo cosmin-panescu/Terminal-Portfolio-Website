@@ -5,13 +5,10 @@ function toggleMenu() {
 
 document.addEventListener("DOMContentLoaded", function () {
   setTimeout(() => {
-    document.getElementById("btn-message").classList.add("show");
-  }, 3000);
+    document.querySelector(".notification-container").classList.add("show");
+  }, 10000); 
 
-  document
-    .getElementById("close-btn")
-    .addEventListener("click", function (event) {
-      event.stopPropagation(); // Evită activarea altor evenimente
-      document.getElementById("btn-message").classList.remove("show");
-    });
+  setTimeout(() => {
+    document.querySelector(".notification-container").classList.remove("show");
+  }, 16000); 
 });
