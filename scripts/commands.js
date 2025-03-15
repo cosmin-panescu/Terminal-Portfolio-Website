@@ -5,6 +5,7 @@ var email = "mailto:1panescu.cosmin@gmail.com";
 
 var help = [
   "<br>",
+  '<span class="command">normal</span>           The "normal" version of the website',
   '<span class="command">aboutme</span>          Who am I?',
   '<span class="command">experience</span>       View my relevant work experience',
   '<span class="command">education</span>        See where and what I study',
