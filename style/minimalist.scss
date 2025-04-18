@@ -134,7 +134,7 @@ main {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 1fr;
-    row-gap: 100px;
+    row-gap: 80px;
     max-width: 100%;
     font-size: 14px;
     line-height: 20px;
@@ -179,6 +179,73 @@ main {
 
         img {
           width: 40px;
+        }
+      }
+    }
+  }
+}
+
+.skills {
+  margin: 100px 0 200px 0;
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 80px;
+    max-width: 100%;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+
+    .cell {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 15px;
+
+      .name {
+        font-size: 16px;
+        text-transform: uppercase;
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        font-size: 15px;
+        column-gap: 50px;
+
+        &.badges {
+          flex-direction: row;
+        }
+
+        li {
+          line-height: 150%;
+
+          &.badge {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+
+            img {
+              width: 100px;
+            }
+
+            a {
+              text-decoration: none;
+              color: #fff;
+              transition: all 0.3s ease;
+
+              &:hover {
+                color: rgb(212, 212, 212);
+              }
+            }
+          }
+
+          span {
+            font-weight: bold;
+          }
         }
       }
     }

@@ -118,7 +118,7 @@ main {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr 1fr;
-  row-gap: 100px;
+  row-gap: 80px;
   max-width: 100%;
   font-size: 14px;
   line-height: 20px;
@@ -158,6 +158,62 @@ main {
 }
 .work .container .cell .company-logo img {
   width: 40px;
+}
+
+.skills {
+  margin: 100px 0 200px 0;
+}
+.skills .container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 80px;
+  max-width: 100%;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 300;
+}
+.skills .container .cell {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+.skills .container .cell .name {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.skills .container .cell ul {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  column-gap: 50px;
+}
+.skills .container .cell ul.badges {
+  flex-direction: row;
+}
+.skills .container .cell ul li {
+  line-height: 150%;
+}
+.skills .container .cell ul li.badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.skills .container .cell ul li.badge img {
+  width: 100px;
+}
+.skills .container .cell ul li.badge a {
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+.skills .container .cell ul li.badge a:hover {
+  color: rgb(212, 212, 212);
+}
+.skills .container .cell ul li span {
+  font-weight: bold;
 }
 
 .projects {

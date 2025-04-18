@@ -12,6 +12,7 @@ const commandsRo = {
   help: "ajutor",
   aboutme: "despremine",
   experience: "experienta",
+  certifications: "certificari",
   education: "educatie",
   projects: "proiecte",
   banner: "banner",
@@ -102,6 +103,13 @@ function commander(cmd) {
     case "experience":
       loopLines(
         currentLanguage === "ro" ? experienceRo : experience,
+        "color2 margin",
+        80
+      );
+      break;
+    case "certifications":
+      loopLines(
+        currentLanguage === "ro" ? certificationsRo : certifications,
         "color2 margin",
         80
       );
