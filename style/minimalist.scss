@@ -38,11 +38,15 @@ main {
     gap: 2rem;
 
     a {
-      color: #fff;
+      color: rgb(190, 190, 190);
       font-size: 14px;
       text-decoration: none;
       font-weight: 300;
       transition: color 0.3s ease;
+
+      &:hover {
+        color: #fff;
+      }
     }
   }
 
@@ -77,6 +81,14 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+
+  .resume-link {
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: #fff;
+    }
+  }
 
   a {
     text-decoration: none;
