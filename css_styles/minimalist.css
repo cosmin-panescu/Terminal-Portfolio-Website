@@ -68,12 +68,31 @@ main {
   justify-content: center;
   align-items: center;
   height: calc(100vh - 5rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#hero a {
+  text-decoration: none;
+  color: #fff;
+}
+#hero .resume-link {
+  font-size: 16px;
+  color: rgb(150, 150, 150);
+  font-weight: 200;
 }
 #hero h1 {
-  font-size: 3.25rem;
+  font-size: 3.5rem;
   font-weight: 400;
-  padding: 0 5rem;
+  padding: 0 7rem;
   text-align: center;
+  line-height: 115%;
+}
+#hero h1 a {
+  transition: all 0.3s ease;
+}
+#hero h1 a:hover {
+  color: rgb(14, 165, 233);
 }
 
 .section .container .cell {
@@ -180,20 +199,24 @@ main {
   gap: 15px;
 }
 .skills .container .cell .name {
-  font-size: 16px;
+  font-size: 17px;
   text-transform: uppercase;
 }
 .skills .container .cell ul {
   display: flex;
   flex-direction: column;
-  font-size: 15px;
+  font-size: 16px;
   column-gap: 50px;
+  row-gap: 10px;
 }
 .skills .container .cell ul.badges {
   flex-direction: row;
 }
 .skills .container .cell ul li {
   line-height: 150%;
+}
+.skills .container .cell ul li::marker {
+  color: #0ba5e9;
 }
 .skills .container .cell ul li.badge {
   display: flex;
@@ -210,7 +233,7 @@ main {
   transition: all 0.3s ease;
 }
 .skills .container .cell ul li.badge a:hover {
-  color: rgb(212, 212, 212);
+  color: rgb(187, 187, 187);
 }
 .skills .container .cell ul li span {
   font-weight: bold;
