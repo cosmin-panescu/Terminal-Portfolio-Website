@@ -166,8 +166,8 @@ main {
 .skills .container {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-template-rows: 1fr 1fr;
-  row-gap: 80px;
+  grid-template-rows: 1fr 1fr max-content max-content;
+  row-gap: 75px;
   max-width: 100%;
   font-size: 14px;
   line-height: 20px;
