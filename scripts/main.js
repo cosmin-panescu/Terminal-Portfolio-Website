@@ -81,7 +81,7 @@ function commander(cmd) {
         "color2",
         80
       );
-      newTab("minimalist.html");
+      newTab("/normal");
       break;
     case "aboutme":
       loopLines(
