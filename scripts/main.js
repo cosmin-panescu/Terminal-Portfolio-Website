@@ -258,3 +258,19 @@ function updateLanguage() {
     location.reload();
   }
 }
+
+function detectMobile() {
+  const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+  if (
+    /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(
+      userAgent
+    )
+  ) {
+    if (window.location.pathname !== "/normal") {
+      window.location.href = "https://cosminpanescu.com/normal";
+    }
+  }
+}
+
+window.onload = detectMobile;
