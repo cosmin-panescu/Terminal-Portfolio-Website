@@ -10,6 +10,7 @@ var help = [
   '<span class="command">experience</span>         View my relevant work experience',
   '<span class="command">certifications</span>     Display my professional achievements',
   '<span class="command">education</span>          See where and what I study',
+  '<span class="command">resume</span>             Did you save my CV?',
   '<span class="command">projects</span>           View my projects',
   '<span class="command">contact</span>            View my socials',
   '<span class="command">romanian</span>           Translate into Romanian',
@@ -144,6 +145,7 @@ var helpRo = [
   '<span class="command">experienta</span>       Experiența mea de muncă relevantă',
   '<span class="command">certificari</span>      Afișează realizările mele profesionale',
   '<span class="command">educatie</span>         Unde și ce studiez',
+  '<span class="command">CV</span>               Ai salvat CV-ul meu?',
   '<span class="command">proiecte</span>         Vezi proiectele mele',
   '<span class="command">contact</span>          Vezi rețelele mele sociale',
   '<span class="command">english</span>          Website in English',
@@ -215,7 +217,7 @@ var projectsRo = [
 ];
 
 var bannerRo = [
-  '<h1 class="index">Cosmin Panescu | Toate drepturile rezervate.</h1>',
+  '<h1 class="index">Cosmin Panescu</h1>',
 
   '<span class="color2">Bine ai venit pe site-ul meu cu un terminal interactiv.</span>',
   '<span class="color2">Pentru a vedea lista de comenzi, tastează</span> <span class="command">\'ajutor\'</span><span class="color2">.</span>',

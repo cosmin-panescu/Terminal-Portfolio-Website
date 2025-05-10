@@ -8,12 +8,15 @@ var git = 0;
 var commands = [];
 var currentLanguage = "en";
 
+const cvPath = "assets/Panescu-Vasile-Cosmin-Resume.pdf";
+
 const commandsRo = {
   help: "ajutor",
   aboutme: "despremine",
   experience: "experienta",
   certifications: "certificari",
   education: "educatie",
+  resume: "cv",
   projects: "proiecte",
   banner: "banner",
   contact: "contact",
@@ -121,6 +124,17 @@ function commander(cmd) {
         80
       );
       break;
+    case "resume":
+      addLine(
+        currentLanguage === "ro"
+          ? "Se descarcă CV-ul..."
+          : "Downloading resume...",
+        "color2",
+        80
+      );
+      downloadCV();
+      break;
+
     case "email":
       addLine(
         currentLanguage === "ro"
@@ -156,7 +170,7 @@ function commander(cmd) {
     case "banner":
       loopLines(currentLanguage === "ro" ? bannerRo : banner, "", 80);
       break;
-    case "romana":
+    case "romanian":
       currentLanguage = "ro";
       updateLanguage();
       break;
@@ -174,6 +188,18 @@ function commander(cmd) {
         100
       );
   }
+}
+
+function downloadCV() {
+  setTimeout(function () {
+    const link = document.createElement("a");
+    link.href = cvPath;
+    link.download = "Panescu-Vasile-Cosmin-Resume.pdf";
+    link.target = "_blank";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }, 500);
 }
 
 function newTab(link) {
