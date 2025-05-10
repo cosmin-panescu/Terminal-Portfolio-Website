@@ -265,7 +265,14 @@ main {
   display: flex;
   gap: 20px;
   font-size: 14px;
+}
+.projects .container .project-box ul li a {
+  text-decoration: none;
   color: #969696;
+  transition: 0.15s ease-in-out;
+}
+.projects .container .project-box ul li a:hover {
+  color: #fff;
 }
 
 .contact {

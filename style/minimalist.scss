@@ -310,7 +310,16 @@ main {
         display: flex;
         gap: 20px;
         font-size: 14px;
-        color: #969696;
+
+        li a {
+          text-decoration: none;
+          color: #969696;
+          transition: 0.15s ease-in-out;
+
+          &:hover {
+            color: #fff;
+          }
+        }
       }
     }
   }
