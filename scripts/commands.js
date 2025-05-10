@@ -124,7 +124,25 @@ var social = [
 
 var projects = [
   "<br>",
-  "Most of the projects that I've done will be on github/cosmin-panescu and linkedin/cosminpanescu or confidential.",
+  "Most of my projects are on GitHub... ⚙️",
+  "<br>",
+  "<span class='white-glow'>WebX - Web Vulnerability Scanner & AI</span>",
+  "  ├─ Web security scanning tool designed to identify vulnerabilities in websites,",
+  "  │  The application consists of a full-stack architecture with Python/Flask",
+  "  │  backend and JavaScript frontend.",
+  "  └─ <i> Python, Flask, JavaScript, OpenAI API</i>",
+  "<br>",
+  "<span class='white-glow'>Server Status Check</span>",
+  "  ├─ Python-based server monitoring tool for real-time website status checks",
+  "  │  and automated email alerts on downtime, with advanced user preferences",
+  "  │  management for the configuration file.",
+  "  └─ <i>Python, Email Alert, JSON</i>",
+  "<br>",
+  "<span class='white-glow'>Python XOR Encryption</span>",
+  "  ├─ Implements XOR encryption and decryption using Python. The project",
+  "  │  consists of two main scripts (encryption.py and decryption.py) ",
+  "  │  that process text files using a user-provided key.",
+  "  └─ <i>Python, XOR, Files</i>",
   "<br>",
 ];
 
@@ -212,7 +230,25 @@ var certificationsRo = [
 
 var projectsRo = [
   "<br>",
-  "Majoritatea proiectelor sunt pe github sau blablabla...",
+  "Majoritatea proiectelor mele sunt pe GitHub... ⚙️",
+  "<br>",
+  "<span class='white-glow'>WebX - Scanner de Vulnerabilități Web & AI</span>",
+  "  ├─ Instrument de scanare a vulnerabilitatilor web, conceput pentru a identifica",
+  "  │  vulnerabilitățile site-urilor web. Aplicația constă într-o arhitectură",
+  "  │   full-stack cu backend Python/Flask și frontend JavaScript.",
+  "  └─ <i> Python, Flask, JavaScript, OpenAI API</i>",
+  "<br>",
+  "<span class='white-glow'>Verificare Stare Server</span>",
+  "  ├─ Instrument de monitorizare a serverelor bazat pe Python, pentru verificarea în timp real",
+  "  │  a stării site-urilor web + alerte automate prin e-mail în caz de întreruperi,",
+  "  │  cu gestionarea avansată a preferințelor utilizatorului pentru fișierul de configurare.",
+  "  └─ <i>Python, Alerte prin Email, JSON</i>",
+  "<br>",
+  "<span class='white-glow'>Criptare XOR în Python</span>",
+  "  ├─ Implementează criptarea și decriptarea XOR folosind Python. Proiectul",
+  "  │  presupune două scripturi principale (encryption.py și decryption.py)",
+  "  │  care procesează fișiere text utilizând o cheie furnizată de utilizator.",
+  "  └─ <i>Python, XOR, Fișiere</i>",
   "<br>",
 ];
 
