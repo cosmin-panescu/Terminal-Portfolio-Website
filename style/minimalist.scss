@@ -151,7 +151,7 @@ main {
   .container {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: max-content max-content;
     row-gap: 80px;
     max-width: 100%;
     font-size: 14px;
@@ -196,7 +196,7 @@ main {
         }
 
         img {
-          width: 40px;
+          width: 45px;
         }
       }
     }
@@ -210,7 +210,7 @@ main {
   .container {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 1fr max-content max-content;
+    grid-template-rows: max-content max-content max-content max-content;
     row-gap: 75px;
     max-width: 100%;
     font-size: 14px;
