@@ -207,7 +207,7 @@ var experienceRo = [
   "  ├─ <i>UNIQA (Decembrie 2024 - prezent)</i>",
   "  ├─ Am colaborat cu echipa de automatizare pentru a defini logica și",
   "  │  structura documentelor, permițând integrarea automată a datelor",
-  "  │  PDF în sistemele interne și reducând introducerea manuală cu peste 40%",
+  "  │  PDF în sistemele interne și reducând introducerea manuală cu peste 40%.",
   "<br>",
   "<span class='white-glow'>Junior Web Developer</span>",
   "  ├─ <i>360Advertising (Mai 2024 - Februarie 2025)</i>",
