@@ -2,6 +2,7 @@ var youtube = "https://youtube.com/@PierdutInNatura";
 var github = "https://github.com/cosmin-panescu";
 var linkedin = "https://www.linkedin.com/in/cosmin-panescu/";
 var email = "mailto:1panescu.cosmin@gmail.com";
+var tryhackme = "https://tryhackme.com/p/panescu";
 
 var help = [
   "<br>",
@@ -50,10 +51,12 @@ var experience = [
   "I've worked on some of the following at these places 👨‍💻",
   "<br>",
   "<span class='white-glow'>Data Operator</span>",
-  "  ├─ <i>UNIQA (Decembee 2024 - present)</i>",
+  "  ├─ <i>UNIQA (December 2024 - present)</i>",
   "  ├─ Collaborated with the automation team to define document logic and structure,",
   "  │  enabling automatic integration of PDF data into internal systems and reducing",
   "  │  manual entry by over 40%.",
+  "  └─ <i> Python, git.</i>",
+
   "<br>",
   "<span class='white-glow'>Junior Web Developer</span>",
   "  ├─ <i>360Advertising (May 2024 - February 2025)</i>",
@@ -124,6 +127,10 @@ var social = [
   '  ├─ <span class="white-glow">github</span>          <a href="' +
     github +
     '" target="_blank">github/cosmin-panescu' +
+    "</a>",
+  '  ├─ <span class="white-glow">tryhackme</span>       <a href="' +
+    tryhackme +
+    '" target="_blank">tryhackme/p/panescu' +
     "</a>",
   '  └─ <span class="white-glow">youtube</span>         <a href="' +
     youtube +
@@ -208,6 +215,7 @@ var experienceRo = [
   "  ├─ Am colaborat cu echipa de automatizare pentru a defini logica și",
   "  │  structura documentelor, permițând integrarea automată a datelor",
   "  │  PDF în sistemele interne și reducând introducerea manuală cu peste 40%.",
+  "  └─ <i> Python, git.</i>",
   "<br>",
   "<span class='white-glow'>Junior Web Developer</span>",
   "  ├─ <i>360Advertising (Mai 2024 - Februarie 2025)</i>",

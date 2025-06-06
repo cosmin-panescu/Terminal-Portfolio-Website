@@ -153,11 +153,29 @@ function commander(cmd) {
       break;
     case "github":
       addLine(
-        currentLanguage === "ro" ? "Către GitHub..." : "Opening github...",
+        currentLanguage === "ro" ? "Către GitHub..." : "Opening GitHub...",
         "color2",
         80
       );
       newTab(github);
+      break;
+    case "youtube":
+      addLine(
+        currentLanguage === "ro" ? "Către YouTube..." : "Opening YouTube...",
+        "color2",
+        80
+      );
+      newTab(youtube);
+      break;
+    case "tryhackme":
+      addLine(
+        currentLanguage === "ro"
+          ? "Către TryHackMe..."
+          : "Opening TryHackMe...",
+        "color2",
+        80
+      );
+      newTab(tryhackme);
       break;
     case "linkedin":
       addLine(
