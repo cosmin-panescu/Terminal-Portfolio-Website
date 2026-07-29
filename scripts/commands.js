@@ -119,25 +119,25 @@ var social = [
   "Write me:",
   "  │",
   '  ├─ <span class="white-glow">email</span>           <a href="' +
-    email +
-    '" target="_blank">1panescu.cosmin@gmail.com' +
-    "</a>",
+  email +
+  '" target="_blank">1panescu.cosmin@gmail.com' +
+  "</a>",
   '  ├─ <span class="white-glow">linkedin</span>        <a href="' +
-    linkedin +
-    '" target="_blank">linkedin/in/cosmin-panescu' +
-    "</a>",
+  linkedin +
+  '" target="_blank">linkedin/in/cosmin-panescu' +
+  "</a>",
   '  ├─ <span class="white-glow">github</span>          <a href="' +
-    github +
-    '" target="_blank">github/cosmin-panescu' +
-    "</a>",
+  github +
+  '" target="_blank">github/cosmin-panescu' +
+  "</a>",
   '  ├─ <span class="white-glow">tryhackme</span>       <a href="' +
-    tryhackme +
-    '" target="_blank">tryhackme/p/panescu' +
-    "</a>",
+  tryhackme +
+  '" target="_blank">tryhackme/p/panescu' +
+  "</a>",
   '  └─ <span class="white-glow">youtube</span>         <a href="' +
-    youtube +
-    '" target="_blank">youtube/@PierdutInNatura' +
-    "</a>",
+  youtube +
+  '" target="_blank">youtube/@PierdutInNatura' +
+  "</a>",
   "<br>",
 ];
 
@@ -289,7 +289,7 @@ var bannerRo = [
 
   '<span class="color2">Bine ai venit pe site-ul meu cu un terminal interactiv.</span>',
   '<span class="color2">Pentru a vedea lista de comenzi, tastează</span> <span class="command">\'ajutor\'</span><span class="color2">.</span>',
-  '<span class="color2">Vizitează versiunea \'normală\' a site-ului, type</span> <span class="command">\'normal\'</span><span class="color2">.</span>',
+  '<span class="color2">Vizitează versiunea \'normală\' a site-ului, tastează</span> <span class="command">\'normal\'</span><span class="color2">.</span>',
   "<br>",
 ];
 

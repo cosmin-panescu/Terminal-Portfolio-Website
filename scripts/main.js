@@ -84,7 +84,7 @@ function commander(cmd) {
         "color2",
         80
       );
-      newTab("/normal");
+      newTab("normal/");
       break;
     case "aboutme":
       loopLines(
@@ -311,8 +311,8 @@ function detectMobile() {
       userAgent
     )
   ) {
-    if (window.location.pathname !== "/normal") {
-      window.location.href = "https://cosminpanescu.com/normal";
+    if (!window.location.pathname.includes("/normal")) {
+      window.location.href = "normal/";
     }
   }
 }
