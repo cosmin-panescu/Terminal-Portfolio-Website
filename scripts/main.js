@@ -183,7 +183,7 @@ function commander(cmd) {
         "color2",
         80
       );
-      newTab(youtube);
+      newTab(linkedin);
       break;
     case "banner":
       loopLines(currentLanguage === "ro" ? bannerRo : banner, "", 80);
@@ -259,7 +259,7 @@ function $(elid) {
 }
 
 var cursor;
-window.onload = init;
+window.addEventListener("load", init);
 
 function init() {
   let cursor = document.getElementById("cursor");
@@ -317,4 +317,4 @@ function detectMobile() {
   }
 }
 
-window.onload = detectMobile;
+window.addEventListener("load", detectMobile);
